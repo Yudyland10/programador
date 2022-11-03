@@ -1,0 +1,13 @@
+<!-- books/templates/books/book_list.html -->
+<h1>Listado de Instructores</h1>
+{% for Instructor in Instructor_list %}
+<ul>
+<li>Cc: {{ instructor.cc }}</li>
+<li>Nombre: {{ instructor.name }}</li>
+<li>E-mail: {{ instructor.email }}</li>
+<li>Telefono: {{ instructor.telefono }}</li>
+<li>Profesión: {{ instructor.profesion }}</li>
+<li>Área a orientar: {{ instructor.sreaOrientar }}</li>
+<li>Rol: {{ instructor.rol }}</li>
+</ul>
+{% endfor %}
